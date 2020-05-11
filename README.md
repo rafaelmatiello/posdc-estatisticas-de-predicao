@@ -96,7 +96,106 @@ http://leg.ufpr.br/~paulojus/embrapa/Rembrapa/Rembrapa.pdf
 				- local aonde tem 50% de valor cima da média e 50% abaixo da média.
 				- divide a *propabilidade* 
 				- a change da população ter o bebe com mais é de 50%.
-			
-        
+			- medias de posição
+				- quartis
+					- 4 partes					
+				- decis
+					- 10 partes					
+				- centis ou percentis ( quantis )
+					- percentual, 100 partes
+			- Medidas de dispersão
+				- sempre precisa ter um ponto de refência, que é a média.
+				- sempre olhar a média e a mediana.
+				tipos:
+					- Aplitude
+						- qual o tamanho da regra para 
+						- valo_máximo - valor_minimo
+					- desvio padrão
+						- mais importante
+						- variação padrão, média, esperada
+						- De cada um compara com a média, se estive longe da media, mais longe do padrão vai estar.
+						- normal de afastamento da média,
+						- porque eleva ao quadrado, lei de regressão a média, 
+							- para cada pessoa muito alta, vai nascer um muito baixo.
+							- para cada sucesso que teve, sempre teve um fracasso.
+							- quadrado, para gerar a parabola, assim pode encontrar as máximas e minimas;
+						- soma a diferenca dos disvio em relação ao media, depois faz a media dos desvios.	
+						- tipos:
+							- populacional 
+								- divide n
+								- quase nunca itilizado
+							- amostral
+								- diferença n-1
+								- da um aredondada em relação ao populacional.
+								- 99,99% das vezes
+						- Ex.: 1 desvio = 65% da amostra, 2 desvio = 96% da amostra, 3 desvio = 99,7% da amostra
+						- identificar informações que tiverem variabilidade tem mais informação, capa de diferenciar as amostra, ex.: idade na faculdade, não varia muito, renda, varia bastante.
+					- Variância
+						- desvio padrão ao quadro
+						- não usa raiz
+						- utilizado somente para cálculo.
+						- Não tem interpretação.
+					- Coefiente de variação
+						- percentual de variação em relação a media
+						- devio padrão / media
+						- utilizado para comparar dados, como altura em peso, 1,7, variação 0,1, pesso media 90 kg devio 10, não para comparar.
+						- se fize o cálculo, da 5,9% em altura é 11% do peso, já é mais fácil, a diferença é o dobro.
+			- medidas de assimetria e curtose
+				- dado em torno da média
+				- 
+				- assimetria
+					- distribuição em cima da media,
+					-simetríca
+						- media, moda e mediana iguais.
+					- positiva
+						- media esta sendo puxao para o lado positivo.
+						- moda < mediana < media
+					- negativa
+						- moda > mediana > media
+				- terceiro momento, privilegia os afastamados e desprivilegia os próximos.
+				- se o valor ficar entre -1 < ass(x) < +1
+				- se o valor ficar abaixo de -1, existem problemas de assimetria negativa.
+				- se o valor ficar maior de 1, existem problema de assimetria positiva.
+			- curtose
+				- densidade em torno da média.
+				- se todo muito concentrado na media, ou todo mundo muito longe de média.
+				- ex.: problema quando colocar home e mulher juntos, isso faz com que média fica entre os dos grupos, isso gerar um densidade longe da media.
+				- mesocúrtica, curva ideal
+					- = 0
+					- ideial: -7 < curt(x) < +7
+				- platicúrtica, curva achatada, faz com que as laterais precisam subir, densidade 
+					- > 0, muito densa nas laterais
+					- ideial: curt(x) < +7
+				- leptocúrtica, aumentou a densidade em cima da média, faz com que a lateria reduzem.
+					- < 0
+					- ideial: -7 < curt(x)
+				- coefiente de achatamento de Fisher
+					- se ficar negativo, muito densidade na media, /\
+					- se ficar positivo, muito densidade nas laterais /-\
+				-  
+			- excel
+				- aplituda maximo(dado) - minimo(dados)
+				- desvio padraão 
+					- desvpad(dados)
+				- variancia
+					- var(dadod)
+
+- variável relacionadas a tamanho, usar funções logartimicas.
+
+ - log(300)
+	5.703782
+ - exp(5.703782)
+	299.9999
+  
+  
+
+
+## R studio
+	- Ctrol - enter, executa
+	- View(minucipios)
+		- mostrar os municipios.
+	- help("quantile")
             
+			
+	
         
