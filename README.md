@@ -2,6 +2,9 @@
 
 Primeira coluna, título ou rótulos
 
+
+mmrodrigues@furb.br
+
 ## links
  
 UFPR 
@@ -269,6 +272,53 @@ http://leg.ufpr.br/~paulojus/embrapa/Rembrapa/Rembrapa.pdf
 		- deve ser tratada, ex.: excluída ou trocado por valor máximos ou minimos.
 
 	
+## Teoria das probalidades
+
+	- variável aleatoria
+		- discreta 
+			- considera grupos, classificações -> casos finitos
+			- ou conta
+			- contagem, ex.: 1,2,3,4 não tem fração -> infinito e numerável 
+				- finito mas sabe qual é o próximo, 1 -> 2 -> 3 -> 4.... 10000 -> 10001
+					- quando olha para escala não sabe qual o proximo, ex.: 0,43 -> 0,4333 ou 0,45???
+		- Variáveis contínuas
+			- Veriáveis media por escala
+			- Conjunto infinito não enumerável
+		- Espaço amostral 
+			- conjunto de valores possíveis
+			- dados: 6 faces
+			- altura: 0,90 até 2,50, todos os valores possíves de acontecer.
+		- esperança:
+			- todo o valor tem a mesma chance de ocorrer.
+		- variáncia
+	- Modelo bernoulli
+		- Testa a possibilidade de sucesso e insucesso.
+	- distribuições discretas
+		- binominal
+			- distribuição para dados de contágem
+		- Poisson
+			- Teoria das filas
+			- quando carros param no sinal a cada abertura de sinal
+			- quantidade de acessos em um site
+				- exemplo acessos ao ava.
+			- quantos sucessos para um intervalor de tempo
+		- Geométrica
+			- Número de tentativas até o sucesso
+			- exemplo:
+				- exemplos do homem que queria ter filho e só conseguiu no quinto filho
+				- p(x=4) = (1 - 0,5)**4 * 0,5 = 0,03125
+		- Hipergeomátrica
+			- controle de qualidade com tamanho pequeno
+			- tinha uma amostra da amostra, pequena que deve reprenta a mesma coisa que o todo.
+			- problemas com amostras grándes
+	- Distribuíção normal ou gaussiana
+		- curva de sino
+		- 1 sd 68,26
+		- 2 sd 95,44
+		- 3 sd 99,72
+			
+			
+
 ## R studio
 	- Ctrol - enter, executa
 	- View(minucipios)

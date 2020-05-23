@@ -17,7 +17,7 @@
     energia$pais <- c("China", "EUA", "Alemanha", "Índia", "Espanha", "Reino Unido", "Canadá", "França", "Itália", "Brasil")
     energia$e_eolica <- c(145362, 74471, 44947, 25088, 23025, 13603, 11205, 10358, 8958, 8715)
     rotulo <- c("País", "Geração de Energia (MW)")
-    par(mgp=c(1,1,0))
+    par(mgp=c(6.5,6.5,0.5, 0.5))
     barplot(energia$e_eolica, main="Energia Eólica no Mundo", xlab=rotulo[1], ylab=rotulo[2], names.arg = energia$pais, ylim=c(0, 145000), cex.names = 0.8, xaxs = "i")
     grid(nx=NA, ny=NULL)
     barplot(energia$e_eolica, main="Energia Eólica no Mundo", xlab=rotulo[1], ylab=rotulo[2], names.arg = energia$pais, ylim=c(0, 145000), cex.names = 0.8, xaxs = "i", add=TRUE)
@@ -34,13 +34,22 @@
     area.cate <- rep(c("pequeno", "grande"), each=6)
     
     plot(riqueza~area)
-    
+    ##adicionar a linha de tendência
     model <-  lm(riqueza~area)
     plot(riqueza~area)
-    abline(model)
+    abline(model, col="red")
+    abline(h = mean(riqueza))
+    abline(v = mean(area))
     
     
     boxplot(riqueza~area.cate)
-    barplot(riqueza)
     
+    
+    barplot(riqueza)
+    mean(peso)
+    # 3166.9
+    median(peso)
+    # 3246.5
+    # cinco colunas é melhor para visualizar
     hist(PesoBebe$peso,  breaks=5, xlab="Peso", ylab="")
+    abline()
