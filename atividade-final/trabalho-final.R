@@ -310,5 +310,30 @@ summary(pessoas$idade)
         
 # Questão 7 (1,50) – Considere que a variável “salario” segue uma distribuição normal de probabilidade. A média e o desvio-padrão já foram calculados. Assim determine o que se pede:
 #   a. Qual a probabilidade estimada de uma pessoa ganhar mais do que o 3º quartil?
+        
+        media <- mean(pessoas$salario) 
+        desvPad <- sd(pessoas$salario) 
+        Q3 <- quantile(pessoas$salario, probs = 0.75)
+        1 - pnorm(Q3, mean = media, sd= desvPad)
+        # 75% 
+        # 0.3396661 
+        
+               
 #   b. Qual a probabilidade estimada de uma pessoa ganhar menos do que o 1º quartil?
-#   c. O que é mais provável, considerando a probabilidade estimada, a pessoa ganhar menos do que a média ou a pessoa ganhar menos do que a mediana?
+        media <- mean(pessoas$salario) 
+        desvPad <- sd(pessoas$salario) 
+        Q1 <- quantile(pessoas$salario, probs = 0.25)
+        1 - pnorm(Q1, mean = media, sd= desvPad)
+        # 25% 
+        # 0.7547981 
+        
+#   c. O que é mais provável, considerando a probabilidade estimada, a pessoa ganhar 
+# menos do que a média ou a pessoa ganhar menos do que a mediana?
+        
+        media <- mean(pessoas$salario) 
+        mediana <- median(pessoas$salario) 
+        desvPad <- sd(pessoas$salario) 
+        Q2 <- quantile(pessoas$salario, probs = 0.5)
+        1 - pnorm(Q2, mean = media, sd= desvPad)
+        # 50% 
+        # 0.6138936 
